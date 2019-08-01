@@ -152,6 +152,7 @@ body{
         height: 150px;
         width: 350px;
         padding: 10px;
+        margin: 10px;
 }
 
 .sign-up input [type=button]:hover{
@@ -174,6 +175,34 @@ body{
 
 .sign-up input [type=button]:focus{
         outline: none;
+}
+
+label{
+        width: 240px;
+        display: inline-block;
+        text-align: right;
+}
+
+textarea{
+        width: 5cm;
+        
+}
+
+.form-group textarea{
+        width: 50%;
+        margin-left: 22px;
+        margin-right: 20px;
+        
+}
+
+.form-control textarea{
+        width: 5cm;
+}
+#body{
+
+}
+
+
 
 
 
