@@ -1,18 +1,35 @@
+*{
+        font-size: 20px;
+}
+
+
+
 .button {
-        background-color: red; /* Green */
+        background-color: red;
         border: none;
         color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        
-        font-size: 16px;
-        margin: 4px 2px;
+        padding: 2px 5px;
         cursor: pointer;
-        align-items: center;
+        width: 110px;
+        font-size: 20px;
+        margin: 4px 2px;
+        bottom: 23px;
         float: right;
-        
-
+        border-radius:10px;
+}
+.form-signup{
+        position: fixed;
+        bottom: 30%;
+        right: 30%;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+        background-color: #ddd;
+}
+.formSignContainer{
+        max-width: 500px;
+        padding: 10px;
+       max-height: auto;
+       text-align: center;
 }
 
 body{
@@ -23,14 +40,7 @@ body{
         right: -40px;
         width: auto;
         height: auto;
-        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../gugu.png);
-
-}
-
-.enter{
-
-        opacity: 0.5;
-        filter: alpha(opacity=50);
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://diymusician.cdbaby.com/wp-content/uploads/2016/03/concert-crowd-at-live-music-festival-m.jpg);
 
 }
 
@@ -63,6 +73,12 @@ body{
         height: 150px;
         width: 350px;
         padding: 10px;
+      
+}
+
+#login{
+        padding: 2rem;
+        
 }
 
 .login input [type=button]:hover{
@@ -74,13 +90,15 @@ body{
 }
 
 .login input [type=text]:focus{
+        background-color: wheat;
         outline: none;
-        border: 1px solid rgba(255, 255, 255, 0.9)
+        border: 1px solid rgba(255, 255, 255, 0.9);
 }
 
 .login input [type=password]:focus{
         outline: none;
-        border: 1px solid rgba(255, 255, 255, 0.9)
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        background-color: wheat;
 }
 
 .login input [type=button]:focus{
@@ -94,6 +112,10 @@ body{
 
 ::-moz-input-placeholder{
         color: rgba(255, 255, 255, 0.6);
+}
+
+#log{
+        opacity: 0.5;
 }
 
 
@@ -129,7 +151,7 @@ body{
         background: transparent;
         border: 1px solid rgba(255,255,255,0.6);
         border-radius: 2px;
-        color: red;
+        color: black;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         
 }
@@ -140,7 +162,7 @@ body{
         background: transparent;
         border: 1px solid rgba(255,255,255,0.6);
         border-radius: 2px;
-        color: red;
+        color: white;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -179,8 +201,8 @@ body{
 
 label{
         width: 240px;
-        display: inline-block;
-        text-align: right;
+
+        
 }
 
 textarea{
@@ -195,17 +217,89 @@ textarea{
         
 }
 
-.form-control textarea{
-        width: 5cm;
+.form-group textarea{
+        width: 20cm;
+
 }
+
+#card{
+        opacity: 0.5;
+}
+
 #body{
-
+        opacity: 0.5;
 }
 
+.form-control{
+        width: 10cm;
+}
 
+.form-group button{
+        float: left;
+}
 
-
-
+#nav {
+        height: 90px;
+        background: black;
+        position: fixed;
+        width: 100%;
+        z-index: 99999;
+        transition: all ease .5s;
+    }
+    #nav ul {
+        list-style: none;
+    }   
+    #nav ul li {
+        padding-left: 30px;
+        display: inline;
+        font-family: 'Crimson Pro', serif;
+        text-decoration: none;
+    }
+    #nav ul li a:link{
+        color:white;
+        text-decoration: none;
+    
+    }
+    #nav ul li a:visited {
+        color: white;
+    }
+    #nav ul li a:hover {
+        color: grey;
+    }
+    #nav ul li a:active {
+        color: grey;
+    } 
+    #logo {
+        color:rgb(190, 5, 5);
+        padding: 20px;
+        font-size: 30px;
+        font-family: 'Aldrich', sans-serif;
+    }
+      
+    #nav.change {
+        background: red;
+        transition: all ease .5s;
+    }
+    .links {
+         float: right;
+         margin-top: -2.6em;
+         margin-right: 1em;
+         color: white;
+     }
+    input[type=text] {
+        width: 150px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+      }
+      
+    
+    input[type=text]:focus {
+        width: -100%;
+      }
+    
+    #artist-pg  {
+        background-color:black;
+    }
 
 
 
